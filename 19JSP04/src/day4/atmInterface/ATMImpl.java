@@ -1,9 +1,33 @@
 package day4.atmInterface;
 
 public class ATMImpl implements ATM {
+	final double defaultMoney = 3000000;
 	private int idATM;
 	private int account;
+	private int money;
 	
+	public ATMImpl() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+
+	public ATMImpl(int idATM, int account, int money) {
+		super();
+		this.idATM = idATM;
+		this.account = account;
+		this.money = money;
+	}
+
+
+	public int getMoney() {
+		return money;
+	}
+
+	public void setMoney(int money) {
+		this.money = money;
+	}
+
 	public int getIdATM() {
 		return idATM;
 	}
@@ -21,7 +45,7 @@ public class ATMImpl implements ATM {
 	}
 
 	@Override
-	public boolean withdraw(int a, double b) {
+	public boolean withdraw(int idATM, double money) {
 		// TODO Auto-generated method stub
 		return false;
 	}
