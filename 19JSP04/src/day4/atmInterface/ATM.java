@@ -1,9 +1,9 @@
 package day4.atmInterface;
 
 public interface ATM {
-	boolean withdraw(int a,double b);
-	boolean deposit(int a, double b);
-	double queryBlance(int a);
-	boolean login(String a, String b);
-	boolean logout(String a);
+	boolean withdraw(int idATM,double money);
+	boolean deposit(int idATM, double moyney);
+	double queryBlance(int idATM);
+	boolean login(String idATM, String password);
+	boolean logout(String idATM);
 }
